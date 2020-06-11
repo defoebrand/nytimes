@@ -5,3 +5,19 @@ body {
 a {
 
 }
+
+.inflation {
+  background: url(inflation-945.png);
+  width: 750px;
+  height: 500px;
+  background-size: cover;
+}
+
+.satellite-img {
+  width: 500px;
+  height: 250px;
+}
+
+.main-article-img {
+  width: 50%;
+}
