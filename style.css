@@ -13,25 +13,27 @@ header {
   top: 0;
   z-index: 2;
   border-bottom: 2px solid black;
-  background-color:white;
+  background-color: white;
   color: black;
   width: 100%;
   justify-content: stretch;
   justify-items: center;
 }
-header *{
+
+header * {
   place-self: center;
 }
-.login{
+
+.login {
   background-color: black;
   color: white;
   padding: 5px;
   border-radius: 3px;
-  font-size:14px
+  font-size: 14px;
 }
-.subscribe{
+
+.subscribe {
   text-decoration: underline;
-  color: black;
   padding: 20px;
 }
 
@@ -48,13 +50,14 @@ main * {
   grid-column: 2 / -2;
 }
 
-main p, h4 {
+main p,
+h4 {
   padding: 0 150px;
 }
 
 .main-article-img {
   grid-column: 2/-2;
-  width: 100%
+  width: 100%;
 }
 
 .inflation {
@@ -66,12 +69,6 @@ main p, h4 {
   height: 750px;
   grid-gap: 5px;
 }
-/*
-.inflation img {
-  border: 1px solid black;
-  grid-area: 1/1/-1/-1;
-  width: 100%;
-}*/
 
 .inflation p {
   padding: 0;
@@ -103,6 +100,7 @@ main p, h4 {
 
 .create-account a {
   color: rgb(50, 104, 145);
+  background: white;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -112,20 +110,49 @@ main p, h4 {
   grid-column: 3 / -1;
   grid-row: 10 / 14;
 }
-.space-astronomy{
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 0 50px;
+}
+
+.space-astronomy {
   display: grid;
   grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 175px 175px 175px;
+  grid-template-rows: 25px 175px 175px 200px;
   grid-auto-flow: column;
   grid-gap: 50px;
-  
- 
+  border-top: 1px solid black;
 }
-.space-astronomy h6{
+
+.space-astronomy h6 {
   grid-column: 1/-1;
   grid-row: 1/2;
-  
 }
-.space-astronomy img{
+
+.space-astronomy img {
   width: 100%;
+}
+
+.bottom-editors-pick {
+  grid-area: -2 / 1 / -1 / -1;
+  display: flex;
+  border-top: 1px solid black;
+}
+
+.popular-links a {
+  font-size: 15px;
+  padding: 15px;
+}
+
+.bottom-editors-pick img {
+  width: 225px;
+  height: 150px;
+}
+
+.popular-links {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
 }
