@@ -92,10 +92,31 @@ h4 {
 
 .create-account {
   place-self: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   padding: 25px 0;
   font-weight: bold;
+  position: relative;
+}
+
+.create-account::before {
+  background: #e5e5e5;
+  display: block;
+  content: '';
+  height: 1px;
+  width: 75px;
+  position: absolute;
+  left: 200px;
+  top: 5px;
+}
+
+.create-account::after {
+  background: #e5e5e5;
+  display: block;
+  content: '';
+  height: 1px;
+  width: 75px;
+  position: absolute;
+  left: 200px;
+  bottom: 5px;
 }
 
 .create-account a {
@@ -109,6 +130,24 @@ h4 {
 .editors-pick {
   grid-column: 3 / -1;
   grid-row: 10 / 14;
+  width: 215px;
+  height: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.editors-pick p {
+  padding: 0;
+}
+
+.editors-pick img {
+  width: 75px;
+  height: 75px;
+}
+
+.editors-pick a {
+  padding: 0 15px;
 }
 
 .bottom-container {
@@ -158,21 +197,37 @@ h4 {
 }
 footer{
   display: flex;
+  flex-direction: column;
   padding :50px;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   justify-content: space-around;
-  
 }
-footer div{
+
+footer div {
+  width: 100%;
+  margin: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links div{
   display: flex;
   flex-direction: column;
-  
 }
+
 footer a{
   text-decoration: none;
   color:black
 }
 footer a:hover{
   text-decoration: underline;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
 }
