@@ -177,14 +177,13 @@ iframe,
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 80px 80px;
-  grid-template-rows: 5px 80px 80px 80px;
+  grid-template-rows: 50px 80px 80px 80px;
 }
 
 .editors-pick p {
   border-bottom: 1px solid black;
-  padding: 15px;
-  margin-bottom: 15px;
   grid-area: 1/1/2/-1;
+  padding: 15px;
 }
 
 .editors-pick img {
