@@ -112,3 +112,20 @@ main p, h4 {
   grid-column: 3 / -1;
   grid-row: 10 / 14;
 }
+.space-astronomy{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 175px 175px 175px;
+  grid-auto-flow: column;
+  grid-gap: 50px;
+  
+ 
+}
+.space-astronomy h6{
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  
+}
+.space-astronomy img{
+  width: 100%;
+}
