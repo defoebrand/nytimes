@@ -5,24 +5,53 @@
   margin: 0;
   padding: 0;
 }
-body {
-}
 
-a {
-}
 header {
   position: fixed;
+  top: 0;
   z-index: 2;
   border-bottom: 2px solid black;
   height: 50px;
   background-color: whitesmoke;
+  color: black;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 12fr 5fr;
+  grid-auto-flow: column;
+  margin-top: 75px;
+  grid-gap: 15px;
+  width: 1250px;
+}
+
+main * {
+  grid-column: 2 / -2;
 }
 
 .inflation {
-  background: url(inflation-945.png);
-  width: 750px;
-  height: 500px;
-  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-image: url('Img\inflation-945.png');
+  width: 500px;
+}
+
+.inflation img {
+  border: 1px solid black;
+  grid-area: 1/1/-1/-1;
+  width: 500px;
+  float: left;
+}
+
+.top {
+  grid-row: 2 / 3;
+  grid-column: auto;
+}
+
+.bottom {
+  grid-row: 4 / 5;
+  grid-column: auto;
 }
 
 .satellite-img {
@@ -32,4 +61,9 @@ header {
 
 .main-article-img {
   width: 50%;
+}
+
+.editors-pick {
+  grid-column: 3 / -1;
+  grid-row: 10 / 14;
 }
