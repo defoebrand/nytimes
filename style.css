@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: roboto, arial, sans-serif;
 }
 
 header {
@@ -22,6 +23,13 @@ header {
 
 header * {
   place-self: center;
+}
+
+h2 {
+  place-self: center;
+  font-size: 40px;
+  font-style: italic;
+  padding: 25px 100px 15px 100px;
 }
 
 .login {
@@ -59,6 +67,16 @@ h4 {
   grid-column: 2/-2;
   width: 100%;
 }
+
+.author-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-icons {
+  display: flex;
+}
+
 iframe,
 .satellite-img {
   place-self: center;
@@ -70,14 +88,19 @@ iframe,
   align-items: center;
 }
 .social-media {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
+  align-items: center;
 }
 .comments button {
   padding: 10px 50px;
   margin-right: 100px;
   margin-left: 50px;
-  background-color: cornflowerblue;
+  background-color: #567b95;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  border-radius: 2px;
 }
 .inflation {
   display: grid;
@@ -151,22 +174,27 @@ iframe,
   grid-row: 10 / 14;
   width: 215px;
   height: 400px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 80px 80px;
+  grid-template-rows: 5px 80px 80px 80px;
 }
 
 .editors-pick p {
-  padding: 0;
+  border-bottom: 1px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+  grid-area: 1/1/2/-1;
 }
 
 .editors-pick img {
   width: 75px;
   height: 75px;
+  grid-column: 1/2;
 }
 
 .editors-pick a {
-  padding: 0 15px;
+ grid-column: 2/3;
 }
 
 .bottom-container {
