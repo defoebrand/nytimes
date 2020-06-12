@@ -7,13 +7,32 @@
 }
 
 header {
+  display: grid;
+  grid-template-columns: 50px 50px 200px 1fr 200px 100px;
   position: fixed;
   top: 0;
   z-index: 2;
   border-bottom: 2px solid black;
-  height: 50px;
-  background-color: whitesmoke;
+  background-color:white;
   color: black;
+  width: 100%;
+  justify-content: stretch;
+  justify-items: center;
+}
+header *{
+  place-self: center;
+}
+.login{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  font-size:14px
+}
+.subscribe{
+  text-decoration: underline;
+  color: black;
+  padding: 20px;
 }
 
 main {
@@ -33,7 +52,7 @@ main * {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-image: url('Img\inflation-945.png');
+  background-image: url("Img\inflation-945.png");
   width: 500px;
 }
 
