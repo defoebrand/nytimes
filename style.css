@@ -37,7 +37,7 @@ header *{
 
 main {
   display: grid;
-  grid-template-columns: 3fr 12fr 5fr;
+  grid-template-columns: 3fr 12fr 3fr;
   grid-auto-flow: column;
   margin-top: 75px;
   grid-gap: 15px;
@@ -48,19 +48,34 @@ main * {
   grid-column: 2 / -2;
 }
 
+main p, h4 {
+  padding: 0 150px;
+}
+
+.main-article-img {
+  grid-column: 2/-2;
+  width: 100%
+}
+
 .inflation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-image: url("Img\inflation-945.png");
-  width: 500px;
+  background-image: url("Img/inflation-945.png");
+  background-size: cover;
+  height: 750px;
+  grid-gap: 5px;
 }
-
+/*
 .inflation img {
   border: 1px solid black;
   grid-area: 1/1/-1/-1;
-  width: 500px;
-  float: left;
+  width: 100%;
+}*/
+
+.inflation p {
+  padding: 0;
+  font-size: 12px;
 }
 
 .top {
@@ -78,8 +93,19 @@ main * {
   height: 250px;
 }
 
-.main-article-img {
-  width: 50%;
+.create-account {
+  place-self: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 25px 0;
+  font-weight: bold;
+}
+
+.create-account a {
+  color: rgb(50, 104, 145);
+  text-decoration: none;
+  display: block;
+  text-align: center;
 }
 
 .editors-pick {
