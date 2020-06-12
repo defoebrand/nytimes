@@ -59,7 +59,26 @@ h4 {
   grid-column: 2/-2;
   width: 100%;
 }
-
+iframe,
+.satellite-img {
+  place-self: center;
+}
+.comments {
+  display: flex;
+  justify-content: center;
+  width: 750px;
+  align-items: center;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+}
+.comments button {
+  padding: 10px 50px;
+  margin-right: 100px;
+  margin-left: 50px;
+  background-color: cornflowerblue;
+}
 .inflation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -100,7 +119,7 @@ h4 {
 .create-account::before {
   background: #e5e5e5;
   display: block;
-  content: '';
+  content: "";
   height: 1px;
   width: 75px;
   position: absolute;
@@ -111,7 +130,7 @@ h4 {
 .create-account::after {
   background: #e5e5e5;
   display: block;
-  content: '';
+  content: "";
   height: 1px;
   width: 75px;
   position: absolute;
@@ -195,10 +214,10 @@ h4 {
   flex-direction: column;
   border-top: 1px solid black;
 }
-footer{
+footer {
   display: flex;
   flex-direction: column;
-  padding :50px;
+  padding: 50px;
   align-items: center;
   width: 100%;
   justify-content: space-around;
@@ -214,16 +233,16 @@ footer div {
   justify-content: space-around;
 }
 
-.footer-links div{
+.footer-links div {
   display: flex;
   flex-direction: column;
 }
 
-footer a{
+footer a {
   text-decoration: none;
-  color:black
+  color: black;
 }
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
 }
 
