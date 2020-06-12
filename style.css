@@ -156,3 +156,23 @@ h4 {
   flex-direction: column;
   border-top: 1px solid black;
 }
+footer{
+  display: flex;
+  padding :50px;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+  
+}
+footer a{
+  text-decoration: none;
+  color:black
+}
+footer a:hover{
+  text-decoration: underline;
+}
