@@ -182,14 +182,27 @@ main p{
   font-size: 20px;
 }
 
-iframe,
+
 .satellite-img {
   place-self: center;
+  
+  width:120%;
+  
+}
+iframe{
+  height: 320px;
+  place-self: center;
+}
+.caption-style{
+  grid-column: 2/-1;
+  width: 100%;
+  margin-left: -60px;
+  padding-right: 100px;
 }
 .comments {
   display: flex;
-  justify-content: center;
-  width: 750px;
+  justify-content: space-between;
+  
   align-items: center;
 }
 .social-media {
@@ -203,9 +216,8 @@ iframe,
   height: 32px;
 }
 .comments button {
-  padding: 10px 50px;
-  margin-right: 100px;
-  margin-left: 50px;
+  padding: 10px 90px;
+  margin: 10px 0 50px 0;
   background-color: #567b95;
   font-weight: bold;
   color: white;
@@ -254,10 +266,7 @@ iframe,
   font-family: nyt-franklin;
 }
 
-.satellite-img {
-  width: 500px;
-  height: 250px;
-}
+
 
 .create-account {
   place-self: center;
@@ -334,6 +343,14 @@ iframe,
   grid-template-columns: 2fr 1fr;
   margin: 0 50px;
 }
+.reference{
+font-size: 12px;
+font-family: nyt-franklin;
+}
+.reference a{
+  text-decoration: underline;
+  color:rgb(102,102,102) ;
+}
 
 .space-astronomy {
   display: grid;
@@ -342,6 +359,7 @@ iframe,
   grid-auto-flow: column;
   grid-gap: 15px;
   border-top: 1px solid black;
+  
 }
 
 .space-astronomy h6 {
