@@ -16,7 +16,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 190px 1fr 190px;
+  grid-template-columns: 200px 1fr 200px;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -47,7 +47,10 @@ header a {
   width: 100%;
   justify-content: space-between;
 }
-
+.header-sections img {
+  width: 15px;
+  height: 15px;
+}
 .login {
   background-color: black;
   color: white;
@@ -83,21 +86,27 @@ h2 {
 
 main p,
 h4 {
-  padding: 0 150px;
+  padding: 0 50px;
 }
 
 .main-article-img {
-  grid-column: 2/-2;
+  grid-column: 1/-1;
   width: 100%;
 }
 
 .author-date {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+}
+.author-date p {
+  text-decoration: underline;
 }
 
 .date-icons {
   display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 iframe,
@@ -114,6 +123,12 @@ iframe,
   display: inline-flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+
+}
+.social-media img{
+  width: 32px;
+  height: 32px
 }
 .comments button {
   padding: 10px 50px;
@@ -201,12 +216,14 @@ iframe,
   grid-auto-flow: column;
   grid-template-columns: 80px 80px;
   grid-template-rows: 50px 80px 80px 80px;
+
 }
 
 .editors-pick p {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   grid-area: 1/1/2/-1;
   padding: 15px;
+  margin-bottom:  15px;
 }
 
 .editors-pick img {
@@ -216,7 +233,12 @@ iframe,
 }
 
 .editors-pick a {
- grid-column: 2/3;
+  grid-column: 2/3;
+  text-decoration: none;
+  color:grey;
+}
+.editors-pick a:hover{
+  text-decoration: underline;
 }
 
 .bottom-container {
