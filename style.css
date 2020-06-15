@@ -110,7 +110,7 @@ h2 {
 
 main p {
   font-family: nyt-imperial;
-  font-size: 20px;  
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -185,9 +185,9 @@ main p{
 
 .satellite-img {
   place-self: center;
-  
+
   width:120%;
-  
+
 }
 iframe{
   height: 320px;
@@ -202,7 +202,7 @@ iframe{
 .comments {
   display: flex;
   justify-content: space-between;
-  
+
   align-items: center;
 }
 .social-media {
@@ -343,6 +343,17 @@ iframe{
   grid-template-columns: 2fr 1fr;
   margin: 0 50px;
 }
+
+.bottom-container h6{
+  font-family: nyt-franklin;
+  font-size: 16px
+  padding: 15px 0;
+}
+
+.bottom-container h6:hover {
+  text-decoration: underline;
+}
+
 .reference{
 font-size: 12px;
 font-family: nyt-franklin;
@@ -359,7 +370,7 @@ font-family: nyt-franklin;
   grid-auto-flow: column;
   grid-gap: 15px;
   border-top: 1px solid black;
-  
+
 }
 
 .space-astronomy h6 {
@@ -385,7 +396,8 @@ font-family: nyt-franklin;
 
 .popular-links a {
   font-size: 15px;
-  padding: 15px;
+  padding: 30px 15px;
+  border-top: 1px solid gray;
 }
 
 .bottom-editors-pick img {
@@ -397,6 +409,7 @@ font-family: nyt-franklin;
   display: flex;
   flex-direction: column;
   border-top: 1px solid black;
+  margin: 0 15px;
 }
 footer {
   display: flex;
