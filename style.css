@@ -92,6 +92,14 @@ h4 {
 
 main h3 {
   grid-column: 1/-2;
+  color:#666;
+  font-weight: 400;
+  font-family:nyt-imperial ;
+  font-size: 15px;
+}
+main h3 span{
+  font-size: 13px;
+  color: #888;
 }
 
 .main-article-img {
@@ -104,7 +112,10 @@ main h3 {
   flex-direction: column;
   justify-content: flex-start;
 }
-.author-date p {
+.author-date p span:hover{
+  text-decoration: none;
+}
+.author-date p span {
   text-decoration: underline;
 }
 
@@ -112,11 +123,19 @@ main h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  
 }
+
 
 .date-icons img {
   width: 32px;
   height: 32px;
+  color:#888;
+}
+main p{
+  font-family: nyt-imperial;
+  
+  font-size: 20px;
 }
 
 iframe,
@@ -258,15 +277,21 @@ iframe,
 .space-astronomy {
   display: grid;
   grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 25px 175px 175px 200px;
+  grid-template-rows: 25px 1fr 1fr 1fr ;
   grid-auto-flow: column;
-  grid-gap: 50px;
+  grid-gap: 15px;
   border-top: 1px solid black;
 }
 
 .space-astronomy h6 {
   grid-column: 1/-1;
   grid-row: 1/2;
+  font-family: nyt-franklin;
+  font-size: 16px;
+  font-weight: bold;
+}
+.space-astronomy p{
+  margin: 15px 0;
 }
 
 .space-astronomy img {
