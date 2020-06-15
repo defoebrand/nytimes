@@ -86,11 +86,12 @@ header a {
 
 main {
   display: grid;
-  grid-template-columns: 3fr 12fr 3fr;
+  grid-template-columns: 200px 600px 200px;
   grid-auto-flow: column;
   margin-top: 75px;
   grid-gap: 15px;
-  width: 80%;
+  width: 1000px;
+  color: #333;
 }
 
 main * {
@@ -101,13 +102,20 @@ h2 {
   place-self: center;
   font-size: 40px;
   font-style: italic;
-  padding: 25px 100px 15px 100px;
+  padding: 25px;
   font-family: nyt-cheltenham;
+  font-weight: 700;
+  color: #121212;
 }
 
-main p,
-h4 {
-  padding: 0 50px;
+main p {
+  font-family: nyt-imperial;
+  font-size: 20px;  
+  line-height: 30px;
+}
+
+main a {
+  color: #326891;
 }
 
 main h3 {
@@ -115,10 +123,13 @@ main h3 {
   color:#666;
   font-family: nyt-imperial;
   font-size: 15px;
+  font-weight: 400;
+  padding-right: 50px;
 }
 main h3 span{
   font-size: 13px;
   color: #888;
+  font-family: nyt-imperial;
 }
 
 .main-article-img {
@@ -129,9 +140,18 @@ main h3 span{
 .author-date {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  color: #333;
+    margin: 25px 0;
 }
-.author-date p span:hover{
+
+.author-date p {
+  font-family: franklin;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0;
+
+}
+.underline-effect:hover{
   text-decoration: none;
 }
 .author-date p span {
@@ -145,6 +165,11 @@ main h3 span{
 
 }
 
+.date-icons p {
+  font-family: nyt-franklin;
+  font-size: 13px;
+  font-weight: 500;
+}
 
 .date-icons img {
   width: 32px;
@@ -312,8 +337,8 @@ iframe,
 
 .space-astronomy {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 25px 1fr 1fr 1fr ;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: 25px repeat(3, 1fr);
   grid-auto-flow: column;
   grid-gap: 15px;
   border-top: 1px solid black;
