@@ -70,7 +70,7 @@ main {
   grid-auto-flow: column;
   margin-top: 75px;
   grid-gap: 15px;
-  width: 1250px;
+  width: 80%;
 }
 
 main * {
@@ -82,11 +82,16 @@ h2 {
   font-size: 40px;
   font-style: italic;
   padding: 25px 100px 15px 100px;
+  font-family: nyt-cheltenham;
 }
 
 main p,
 h4 {
   padding: 0 50px;
+}
+
+main h3 {
+  grid-column: 1/-2;
 }
 
 .main-article-img {
@@ -107,6 +112,11 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.date-icons img {
+  width: 32px;
+  height: 32px;
 }
 
 iframe,
