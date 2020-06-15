@@ -188,13 +188,23 @@ iframe,
   border-radius: 2px;
 }
 .inflation {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-image: url("Img/inflation-945.png");
-  background-size: cover;
-  height: 750px;
-  grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 175px);
+    background-image: url("Img/inflation-945.png");
+    background-size: cover;
+    height: 575px;
+    grid-gap: 5px;
+    grid-column: 1/-1;
+    margin: 100px 0;
+}
+.inflation-title{
+  grid-area: 1/1/2/-1;
+  margin-top: -50px;
+
+}
+.inflation-title h4{
+  padding: 0;
 }
 
 .inflation p {
@@ -210,6 +220,13 @@ iframe,
 .bottom-inflation-text {
   grid-row: 4 / 5;
   grid-column: auto;
+}
+.larry{
+  grid-column: 1/-1;
+  padding:0;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: nyt-franklin;
 }
 
 .satellite-img {
