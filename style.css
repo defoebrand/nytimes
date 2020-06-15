@@ -124,11 +124,10 @@ iframe,
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
 }
-.social-media img{
+.social-media img {
   width: 32px;
-  height: 32px
+  height: 32px;
 }
 .comments button {
   padding: 10px 50px;
@@ -216,14 +215,13 @@ iframe,
   grid-auto-flow: column;
   grid-template-columns: 80px 80px;
   grid-template-rows: 50px 80px 80px 80px;
-
 }
 
 .editors-pick p {
   border-bottom: 1px solid grey;
   grid-area: 1/1/2/-1;
   padding: 15px;
-  margin-bottom:  15px;
+  margin-bottom: 15px;
 }
 
 .editors-pick img {
@@ -235,9 +233,9 @@ iframe,
 .editors-pick a {
   grid-column: 2/3;
   text-decoration: none;
-  color:grey;
+  color: grey;
 }
-.editors-pick a:hover{
+.editors-pick a:hover {
   text-decoration: underline;
 }
 
