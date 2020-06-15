@@ -7,6 +7,26 @@
   font-family: roboto, arial, sans-serif;
 }
 
+@font-face {
+  font-family: nyt-cheltenham;
+  src: url('fonts/cheltenham-normal-400.ttf');
+}
+
+@font-face {
+  font-family: nyt-cheltenham-small;
+  src: url('fonts/cheltenham-small-normal-400.ttf');
+}
+
+@font-face {
+  font-family: nyt-franklin;
+  src: url('fonts/franklin-normal-500.ttf');
+}
+
+@font-face {
+  font-family: nyt-imperial;
+  src: url('fonts/imperial-normal-500.ttf');
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -93,8 +113,7 @@ h4 {
 main h3 {
   grid-column: 1/-2;
   color:#666;
-  font-weight: 400;
-  font-family:nyt-imperial ;
+  font-family: nyt-imperial;
   font-size: 15px;
 }
 main h3 span{
@@ -123,7 +142,7 @@ main h3 span{
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-  
+
 }
 
 
@@ -134,7 +153,7 @@ main h3 span{
 }
 main p{
   font-family: nyt-imperial;
-  
+
   font-size: 20px;
 }
 
@@ -288,7 +307,7 @@ iframe,
   grid-row: 1/2;
   font-family: nyt-franklin;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .space-astronomy p{
   margin: 15px 0;
