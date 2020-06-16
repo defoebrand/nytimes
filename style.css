@@ -138,6 +138,7 @@ main h3 span {
 main h4 {
   font-size: 20px;
 }
+
 .main-article-img {
   grid-column: 1/-1;
   width: 100%;
@@ -210,17 +211,20 @@ iframe {
   width: 100%;
   padding-right: 100px;
 }
+
 .satellite-caption {
   grid-column: 2/-2;
   width: 120%;
   padding-right: 100px;
   margin-left: -60px;
 }
+
 .video-caption {
   grid-column: 2/-2;
   width: 100%;
   padding-right: 100px;
 }
+
 .comments {
   display: flex;
   justify-content: space-between;
@@ -470,9 +474,11 @@ hr {
 .bottom-editors-pick-images {
   display: flex;
 }
+
 .bottom-editors-pick-images p {
   margin: 10px;
 }
+
 .popular-links a {
   font-size: 15px;
   padding: 15px;
@@ -499,11 +505,14 @@ footer {
   align-items: center;
   width: 100%;
   justify-content: space-around;
+
+
 }
 
 footer div {
   width: 100%;
   margin: 15px;
+
 }
 
 .footer-links {
@@ -514,6 +523,7 @@ footer div {
 .footer-links div {
   display: flex;
   flex-direction: column;
+
 }
 
 footer a {
@@ -528,4 +538,33 @@ footer a:hover {
 .footer-logo {
   display: flex;
   justify-content: space-between;
+  border-top: 5px double rgb(153, 153, 153);
+
+
+}
+
+.news a {
+  padding: 5px 0;
+}
+
+.homepage {
+  font-family: nyt-fraklin;
+  font-size: 11px;
+  color: rgb(86, 123, 149);
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.homepage:hover {
+  text-decoration: none;
+  color: rgb(86, 123, 149);
+}
+
+.contact-links {
+  border-top: 1px solid rgb(153, 153, 153);
+  padding: 10px;
+  font-family: nyt-franklin;
+  font-size: 11px;
+  color: #666;
+
 }
