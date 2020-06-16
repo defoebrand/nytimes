@@ -67,10 +67,12 @@ header a {
   width: 100%;
   justify-content: space-between;
 }
+
 .header-sections img {
   width: 15px;
   height: 15px;
 }
+
 .login {
   background-color: black;
   color: white;
@@ -120,13 +122,14 @@ main a {
 
 main h3 {
   grid-column: 1/-2;
-  color:#666;
+  color: #666;
   font-family: nyt-imperial;
   font-size: 15px;
   font-weight: 400;
   padding-right: 50px;
 }
-main h3 span{
+
+main h3 span {
   font-size: 13px;
   color: #888;
   font-family: nyt-imperial;
@@ -141,7 +144,7 @@ main h3 span{
   display: flex;
   flex-direction: column;
   color: #333;
-    margin: 25px 0;
+  margin: 25px 0;
 }
 
 .author-date p {
@@ -151,9 +154,11 @@ main h3 span{
   padding: 0;
 
 }
-.underline-effect:hover{
+
+.underline-effect:hover {
   text-decoration: none;
 }
+
 .author-date p span {
   text-decoration: underline;
 }
@@ -174,9 +179,10 @@ main h3 span{
 .date-icons img {
   width: 32px;
   height: 32px;
-  color:#888;
+  color: #888;
 }
-main p{
+
+main p {
   font-family: nyt-imperial;
 
   font-size: 20px;
@@ -186,35 +192,42 @@ main p{
 .satellite-img {
   place-self: center;
 
-  width:120%;
+  width: 120%;
 
 }
-iframe{
+
+iframe {
   height: 320px;
+  width: 600px;
   place-self: center;
 }
-.caption-style{
+
+.caption-style {
   grid-column: 2/-1;
   width: 100%;
-  margin-left: -60px;
+
   padding-right: 100px;
 }
+
 .comments {
   display: flex;
   justify-content: space-between;
 
   align-items: center;
 }
+
 .social-media {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
 .social-media img {
   width: 32px;
   height: 32px;
 }
+
 .comments button {
   padding: 10px 90px;
   margin: 10px 0 50px 0;
@@ -224,29 +237,46 @@ iframe{
   border: 0;
   border-radius: 2px;
 }
+
 .inflation {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 175px);
-    background-image: url("Img/inflation-945.png");
-    background-size: cover;
-    height: 575px;
-    grid-gap: 5px;
-    grid-column: 1/-1;
-    margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 150px);
+  background-image: url("Img/inflation-945.png");
+  background-size: cover;
+  height: 575px;
+  grid-row-gap: 5px;
+  grid-column-gap: 15px;
+  grid-column: 1/-1;
+  margin: 100px 0;
 }
-.inflation-title{
+
+hr {
+  width: 5%;
+  margin-left: -50px;
+
+}
+
+.inflation-title {
   grid-area: 1/1/2/-1;
   margin-top: -50px;
 
 }
-.inflation-title h4{
+
+.inflation-title h4 {
   padding: 0;
+  font-family: nyt-cheltenham;
+  font-weight: 700;
 }
 
 .inflation p {
   padding: 0;
   font-size: 12px;
+  line-height: 15px;
+  font-family: nyt-cheltenham-small;
+  font-size: 14px;
+
+
 }
 
 .top-inflation-text {
@@ -258,9 +288,10 @@ iframe{
   grid-row: 4 / 5;
   grid-column: auto;
 }
-.larry{
+
+.larry {
   grid-column: 1/-1;
-  padding:0;
+  padding: 0;
   font-size: 14px;
   font-weight: 500;
   font-family: nyt-franklin;
@@ -308,25 +339,31 @@ iframe{
 .editors-pick {
   grid-column: 3 / -1;
   grid-row: 10 / 14;
-  width: 215px;
+  width: 100%;
   height: 400px;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 80px 80px;
   grid-template-rows: 50px 80px 80px 80px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
 }
 
 .editors-pick p {
   border-bottom: 1px solid grey;
   grid-area: 1/1/2/-1;
-  padding: 15px;
-  margin-bottom: 15px;
+  padding: 15px 15px 15px 0;
+  font-family: nyt-franklin;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 .editors-pick img {
   width: 75px;
   height: 75px;
   grid-column: 1/2;
+
 }
 
 .editors-pick a {
@@ -334,6 +371,7 @@ iframe{
   text-decoration: none;
   color: grey;
 }
+
 .editors-pick a:hover {
   text-decoration: underline;
 }
@@ -344,23 +382,23 @@ iframe{
   margin: 0 50px;
 }
 
-.bottom-container h6{
+.bottom-container h6 {
   font-family: nyt-franklin;
-  font-size: 16px
-  padding: 15px 0;
+  font-size: 16px padding: 15px 0;
 }
 
 .bottom-container h6:hover {
   text-decoration: underline;
 }
 
-.reference{
-font-size: 12px;
-font-family: nyt-franklin;
+.reference {
+  font-size: 12px;
+  font-family: nyt-franklin;
 }
-.reference a{
+
+.reference a {
   text-decoration: underline;
-  color:rgb(102,102,102) ;
+  color: rgb(102, 102, 102);
 }
 
 .space-astronomy {
@@ -380,7 +418,8 @@ font-family: nyt-franklin;
   font-size: 16px;
   font-weight: 500;
 }
-.space-astronomy p{
+
+.space-astronomy p {
   margin: 15px 0;
 }
 
@@ -411,6 +450,7 @@ font-family: nyt-franklin;
   border-top: 1px solid black;
   margin: 0 15px;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -439,6 +479,7 @@ footer a {
   text-decoration: none;
   color: black;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
