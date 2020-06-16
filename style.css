@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 header {
   width: 100%;
   line-height: 45px;
@@ -41,6 +42,7 @@ header {
   top: 0;
   z-index: 2;
 }
+
 .header-wrapper {
   display: grid;
   grid-template-columns: 200px 1fr 200px;
@@ -48,7 +50,6 @@ header {
   color: black;
   max-width: 1500px;
   margin: auto;
-
 }
 
 header * {
@@ -109,13 +110,13 @@ h2 {
   font-size: 40px;
   font-style: italic;
   padding: 25px;
-  font-family: nyt-cheltenham;
+  font-family: nyt-cheltenham, sans-serif;
   font-weight: 700;
   color: #121212;
 }
 
 main p {
-  font-family: nyt-imperial;
+  font-family: nyt-imperial, sans-serif;
   font-size: 20px;
   line-height: 30px;
 }
@@ -127,7 +128,7 @@ main a {
 main h3 {
   grid-column: 1/-2;
   color: #666;
-  font-family: nyt-imperial;
+  font-family: nyt-imperial, sans-serif;
   font-size: 15px;
   font-weight: 400;
   padding-right: 50px;
@@ -136,7 +137,7 @@ main h3 {
 main h3 span {
   font-size: 13px;
   color: #888;
-  font-family: nyt-imperial;
+  font-family: nyt-imperial, sans-serif;
 }
 
 main h4 {
@@ -156,11 +157,10 @@ main h4 {
 }
 
 .author-date p {
-  font-family: franklin;
+  font-family: nyt-franklin, sans-serif;
   font-weight: 700;
   font-size: 15px;
   padding: 0;
-
 }
 
 .underline-effect:hover {
@@ -175,11 +175,10 @@ main h4 {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-
 }
 
 .date-icons p {
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 13px;
   font-weight: 500;
 }
@@ -203,21 +202,9 @@ main h4 {
   margin-left: -37px;
 }
 
-
-
-
-main p {
-  font-family: nyt-imperial;
-
-  font-size: 20px;
-}
-
-
 .satellite-img {
   place-self: center;
-
   width: 100%;
-
 }
 
 iframe {
@@ -280,7 +267,6 @@ iframe {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 150px);
-  ;
   background-image: url("Img/inflation-945.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -305,19 +291,19 @@ hr {
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  font-family: nyt-cheltenham;
+  font-family: nyt-cheltenham, sans-serif;
 }
 
 .inflation-title-text {
   font-size: 14px;
-  font-family: nyt-cheltenham-small;
+  font-family: nyt-cheltenham-small, sans-serif;
 }
 
 .inflation p {
   padding: 0;
   font-size: 14px;
   line-height: 17px;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
 }
 
 .top-inflation-text {
@@ -335,11 +321,9 @@ hr {
   padding: 0;
   font-size: 14px;
   font-weight: 500;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   margin-bottom: 25px;
 }
-
-
 
 .create-account {
   place-self: center;
@@ -347,7 +331,6 @@ hr {
   font-weight: bold;
   position: relative;
   text-align: center;
-
 }
 
 .create-account::before {
@@ -371,17 +354,19 @@ hr {
   left: 33%;
   bottom: 5px;
 }
+
 .create-account p {
   font-size: 15px;
-    font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
 }
+
 .create-account a {
   color: rgb(50, 104, 145);
   background: white;
   text-decoration: none;
   display: block;
   text-align: center;
-    font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
 }
 
 .editors-pick {
@@ -393,14 +378,15 @@ hr {
   grid-template-rows: 50px 80px 80px 80px 80px;
   grid-row-gap: 10px;
   margin-left: 50px;
-  margin-top:100px;
+  margin-top: 100px;
+  float: right;
 }
 
 .editors-pick p {
   border-bottom: 1px solid grey;
   grid-area: 1/1/2/-1;
   padding: 15px 15px 15px 0;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 14px;
   color: rgb(0, 0, 0);
   font-weight: 700;
@@ -410,7 +396,17 @@ hr {
   width: 75px;
   height: 75px;
   grid-column: 1/2;
+}
 
+.reference a {
+  text-decoration: underline;
+  color: rgb(102, 102, 102);
+}
+
+.popular-links a {
+  font-size: 15px;
+  padding: 15px;
+  border-top: 1px solid #e7e7e7;
 }
 
 .editors-pick a {
@@ -432,7 +428,7 @@ hr {
 }
 
 .bottom-container h6 {
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 16px;
   padding: 15px 0;
   font-weight: bold;
@@ -440,13 +436,8 @@ hr {
 
 .reference {
   font-size: 12px;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   line-height: 17px;
-}
-
-.reference a {
-  text-decoration: underline;
-  color: rgb(102, 102, 102);
 }
 
 .space-astronomy {
@@ -462,7 +453,7 @@ hr {
 .space-astronomy h6 {
   grid-column: 1/-1;
   grid-row: 1/2;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 16px;
 }
 
@@ -477,20 +468,20 @@ hr {
 }
 
 .space-astronomy-text {
-  font-family: nyt-cheltenham;
+  font-family: nyt-cheltenham, sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
 
 .space-astronomy p span {
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-weight: 500;
   font-size: 12px;
   color: rgb(153, 153, 153);
 }
 
 .credit {
-  font-family: nyt-cheltenham-small;
+  font-family: nyt-cheltenham-small, sans-serif;
   font-size: 10px;
   align-self: flex-end;
 }
@@ -510,15 +501,8 @@ hr {
   margin: 10px;
 }
 
-.popular-links a {
-  font-size: 15px;
-  padding: 15px;
-  border-top: 1px solid #e7e7e7;
-}
-
 .bottom-editors-pick img {
   width: 100%;
-
 }
 
 .popular-links {
@@ -535,14 +519,11 @@ footer {
   padding: 50px;
   align-items: center;
   justify-content: space-around;
-
-
 }
 
 footer div {
   width: 100%;
   margin: 15px;
-
 }
 
 .footer-links {
@@ -553,7 +534,6 @@ footer div {
 .footer-links div {
   display: flex;
   flex-direction: column;
-
 }
 
 footer a {
@@ -569,19 +549,17 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   border-top: 5px double rgb(153, 153, 153);
-
-
 }
 
 .news a {
   padding: 5px 0;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
 
 .homepage {
-  font-family: nyt-fraklin;
+  font-family: nyt-fraklin, sans-serif;
   font-size: 11px;
   color: rgb(86, 123, 149);
   text-decoration: none;
@@ -595,7 +573,7 @@ footer a:hover {
 
 .contact-links {
   border-top: 1px solid rgb(153, 153, 153);
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 11px;
   color: #666;
   padding: 10px 25px;
@@ -603,15 +581,9 @@ footer a:hover {
 
 .contact-links a {
   padding: 0 5px;
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-size: 11px;
   color: #666;
-}
-
-.subscribe {
-  border-left: 1px solid rgb(153, 153, 153);
-  padding-left: 20px;
-
 }
 
 .subscribe a {
@@ -627,11 +599,10 @@ footer a:hover {
 .subscribe img {
   width: 13px;
   height: 13px;
-
 }
 
 .dark-text a {
-  font-family: nyt-franklin;
+  font-family: nyt-franklin, sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-left: -15px;
