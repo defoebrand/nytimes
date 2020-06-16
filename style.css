@@ -46,7 +46,7 @@ header {
   grid-template-columns: 200px 1fr 200px;
   background-color: white;
   color: black;
-  width: 1500px;
+  max-width: 1500px;
   margin: auto;
 
 }
@@ -87,6 +87,7 @@ header a {
 
 .subscribe {
   font-size: 13px;
+  border: none;
 }
 
 main {
@@ -215,7 +216,7 @@ main p {
 .satellite-img {
   place-self: center;
 
-  width: 120%;
+  width: 100%;
 
 }
 
@@ -233,9 +234,8 @@ iframe {
 
 .satellite-caption {
   grid-column: 2/-2;
-  width: 120%;
+  width: 100%;
   padding-right: 100px;
-  margin-left: -60px;
 }
 
 .video-caption {
@@ -386,13 +386,14 @@ hr {
 
 .editors-pick {
   grid-column: 3 / -1;
-  grid-row: 10 / 13;
+  grid-row: 9 / 13;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 100px 125px;
   grid-template-rows: 50px 80px 80px 80px 80px;
   grid-row-gap: 10px;
   margin-left: 50px;
+  margin-top:100px;
 }
 
 .editors-pick p {
@@ -594,15 +595,14 @@ footer a:hover {
 
 .contact-links {
   border-top: 1px solid rgb(153, 153, 153);
-  padding-top: 10px;
   font-family: nyt-franklin;
   font-size: 11px;
   color: #666;
-  padding: 0 50px;
+  padding: 10px 25px;
 }
 
 .contact-links a {
-  padding: 0 9px;
+  padding: 0 5px;
   font-family: nyt-franklin;
   font-size: 11px;
   color: #666;
