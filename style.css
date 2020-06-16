@@ -135,6 +135,9 @@ main h3 span {
   font-family: nyt-imperial;
 }
 
+main h4 {
+  font-size: 20px;
+}
 .main-article-img {
   grid-column: 1/-1;
   width: 100%;
@@ -205,10 +208,19 @@ iframe {
 .caption-style {
   grid-column: 2/-1;
   width: 100%;
-
   padding-right: 100px;
 }
-
+.satellite-caption {
+  grid-column: 2/-2;
+  width: 120%;
+  padding-right: 100px;
+  margin-left: -60px;
+}
+.video-caption {
+  grid-column: 2/-2;
+  width: 100%;
+  padding-right: 100px;
+}
 .comments {
   display: flex;
   justify-content: space-between;
@@ -381,7 +393,7 @@ hr {
 .bottom-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 0 50px;
+  margin: 0 150px;
 }
 
 .bottom-container h6 {
@@ -463,8 +475,8 @@ hr {
 }
 .popular-links a {
   font-size: 15px;
-  padding: 30px 15px;
-  border-top: 1px solid gray;
+  padding: 15px;
+  border-top: 1px solid #e7e7e7;
 }
 
 .bottom-editors-pick img {
@@ -477,6 +489,7 @@ hr {
   flex-direction: column;
   border-top: 1px solid black;
   margin: 0 15px;
+  width: 300px;
 }
 
 footer {
