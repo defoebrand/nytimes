@@ -592,16 +592,18 @@ footer a:hover {
 
 .education-rate {
   padding-bottom: 10px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 .subscribe img {
   width: 13px;
   height: 13px;
+
 }
 
-#dark-text {
+.dark-text a {
   font-family: nyt-franklin;
-  font-weight: 900;
-  font-size: 18px
+  font-weight: 700px;
+  font-size: 16px;
+  margin-left: -15px;
 }
