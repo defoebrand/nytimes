@@ -404,7 +404,7 @@ hr {
 
 .space-astronomy {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 25px repeat(3, auto);
   grid-auto-flow: column;
   grid-gap: 15px;
@@ -417,11 +417,12 @@ hr {
   grid-row: 1/2;
   font-family: nyt-franklin;
   font-size: 16px;
-
 }
 
 .space-astronomy p {
   margin: 15px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .space-astronomy img {
@@ -444,9 +445,7 @@ hr {
 .credit {
   font-family: nyt-cheltenham-small;
   font-size: 10px;
-  float: right;
-
-
+  align-self: flex-end;
 }
 
 .bottom-editors-pick {
@@ -459,7 +458,9 @@ hr {
 .bottom-editors-pick-images {
   display: flex;
 }
-
+.bottom-editors-pick-images p {
+  margin: 10px;
+}
 .popular-links a {
   font-size: 15px;
   padding: 30px 15px;
@@ -467,8 +468,8 @@ hr {
 }
 
 .bottom-editors-pick img {
-  width: 225px;
-  height: 150px;
+  width: 100%;
+
 }
 
 .popular-links {
