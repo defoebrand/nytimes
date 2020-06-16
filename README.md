@@ -18,7 +18,7 @@ This project was the first project compiled by Brandon and Kartheek in the Micro
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/defoebrand/nytimes/0a2b43139b24479396da820c962b0285f4a2ca22/index.html)
+[Live Demo Link](https://rawcdn.githack.com/defoebrand/nytimes/6812439163ae3ef000e7fb8ddbdc62f2b3206bd4/index.html)
 
 
 ## Getting Started
