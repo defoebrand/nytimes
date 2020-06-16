@@ -574,6 +574,9 @@ footer a:hover {
 
 .news a {
   padding: 5px 0;
+  font-family: nyt-franklin;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .homepage {
@@ -591,9 +594,45 @@ footer a:hover {
 
 .contact-links {
   border-top: 1px solid rgb(153, 153, 153);
-  padding: 10px;
+  padding-top: 10px;
   font-family: nyt-franklin;
   font-size: 11px;
   color: #666;
+  padding: 0 50px;
+}
 
+.contact-links a {
+  padding: 0 9px;
+  font-family: nyt-franklin;
+  font-size: 11px;
+  color: #666;
+}
+
+.subscribe {
+  border-left: 1px solid rgb(153, 153, 153);
+  padding-left: 20px;
+
+}
+
+.subscribe a {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.education-rate {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.subscribe img {
+  width: 13px;
+  height: 13px;
+
+}
+
+.dark-text a {
+  font-family: nyt-franklin;
+  font-weight: 700px;
+  font-size: 16px;
+  margin-left: -15px;
 }
