@@ -14,7 +14,7 @@ This project was the first project compiled by Brandon and Kartheek in the Micro
 - VScode and Atom
 - Windows10 and Mac
 - https://validator.w3.org was used to validate the HTML code in this project
-- https://stickler-ci.com/ was used to validate the CSS code in this project
+
 
 ## Live Demo
 
