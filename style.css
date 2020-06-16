@@ -241,7 +241,8 @@ iframe {
 .inflation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 150px);;
+  grid-template-rows: repeat(4, 150px);
+  ;
   background-image: url("Img/inflation-945.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -403,12 +404,12 @@ hr {
 
 .space-astronomy {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
-  grid-template-rows: 25px repeat(3, 1fr);
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 25px repeat(3, auto);
   grid-auto-flow: column;
   grid-gap: 15px;
   border-top: 1px solid black;
-
+  margin-right: 25px;
 }
 
 .space-astronomy h6 {
@@ -416,7 +417,7 @@ hr {
   grid-row: 1/2;
   font-family: nyt-franklin;
   font-size: 16px;
-  font-weight: 500;
+
 }
 
 .space-astronomy p {
@@ -427,12 +428,34 @@ hr {
   width: 100%;
 }
 
+.space-astronomy-text {
+  font-family: nyt-cheltenham;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.space-astronomy p span {
+  font-family: nyt-franklin;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(153, 153, 153);
+}
+
+.credit {
+  font-family: nyt-cheltenham-small;
+  font-size: 10px;
+  float: right;
+
+
+}
+
 .bottom-editors-pick {
   grid-area: -2 / 1 / -1 / -1;
   display: flex;
   flex-direction: column;
   border-top: 1px solid black;
 }
+
 .bottom-editors-pick-images {
   display: flex;
 }
