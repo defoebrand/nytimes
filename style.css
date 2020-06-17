@@ -391,19 +391,17 @@ footer a {
 .editors-pick {
   grid-column: 3 / -1;
   grid-row: 9 / 13;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 100px 125px;
-  grid-template-rows: 50px 80px 80px 80px 80px;
-  grid-row-gap: 10px;
   margin-left: 50px;
   margin-top: 100px;
-  float: right;
+  width: 200px;
+}
+
+.editors-pick div {
+  margin: 10px 5px;
 }
 
 .editors-pick p {
   border-bottom: 1px solid grey;
-  grid-area: 1/1/2/-1;
   padding: 15px 15px 15px 0;
   font-family: nyt-franklin, sans-serif;
   font-size: 14px;
@@ -414,7 +412,19 @@ footer a {
 .editors-pick img {
   width: 75px;
   height: 75px;
-  grid-column: 1/2;
+  float: left;
+  display: block;
+  margin-right: 15px;
+}
+
+.editors-pick a {
+  text-decoration: none;
+  color: grey;
+  height: 75px;
+  font-family: nyt-cheltenham-small;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .reference a {
@@ -426,13 +436,6 @@ footer a {
   font-size: 15px;
   padding: 15px;
   border-top: 1px solid #e7e7e7;
-}
-
-.editors-pick a {
-  grid-column: 2/3;
-  text-decoration: none;
-  color: grey;
-  align-self: center;
 }
 
 .news a {
