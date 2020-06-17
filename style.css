@@ -421,7 +421,7 @@ footer a {
   text-decoration: none;
   color: grey;
   height: 75px;
-  font-family: nyt-cheltenham-small;
+  font-family: nyt-cheltenham-small, sans-serif;
   font-size: 14px;
   display: flex;
   align-items: center;
