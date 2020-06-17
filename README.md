@@ -19,7 +19,7 @@ This project was the first project compiled by Brandon and Kartheek in the Micro
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/defoebrand/nytimes/6812439163ae3ef000e7fb8ddbdc62f2b3206bd4/index.html)
+[Live Demo Link](https://raw.githack.com/defoebrand/nytimes/main-project/index.html)
 
 
 ## Getting Started
@@ -56,4 +56,3 @@ Give a ⭐️ if you like this project!
 
 This project is licensed by Microverse and The Odin Project
 =======
-
